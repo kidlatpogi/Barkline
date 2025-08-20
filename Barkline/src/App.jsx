@@ -2,8 +2,8 @@
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Login from "./JSX/login";
-import Signup from "./JSX/signup";
+import Login from "./JSX/Login";
+import CreateAccount from "./JSX/CreateAccount";
 
 import ForgotPassword from "./JSX/forgotPassword";
 import ResetPassword from "./JSX/resetPassword";
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         {/* Login and Signup */}
         <Route path="/" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/create-account" element={<CreateAccount />} />
 
         {/* Forgot Password and Reset Password*/}
         <Route path="/forgot-password" element={<ForgotPassword />} />

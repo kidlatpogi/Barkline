@@ -1,12 +1,10 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../CSS/login.css";
+import CreateAccountForm from "./components/Form/CreateAccountForm";
 
-import LoginForm from "./components/Form/LoginForm";
-
-function Login() {
+function CreateAccount() {
   return (
     <div className="container-fluid vh-100">
       <div className="row h-100">
+        
         {/* LEFT SIDE IMAGE */}
         <div className="col-md-6 d-none d-md-block p-0">
           <img
@@ -18,10 +16,10 @@ function Login() {
         </div>
 
         {/* RIGHT SIDE FORM */}
-        <LoginForm/>
+        <CreateAccountForm/>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default CreateAccount;
