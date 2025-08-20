@@ -7,6 +7,7 @@ import CreateAccount from "./JSX/CreateAccount";
 
 import ForgotPassword from "./JSX/forgotPassword";
 import ResetPassword from "./JSX/resetPassword";
+import Home from "./JSX/Home";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         {/* Forgot Password and Reset Password*/}
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
+
+        
+        <Route path="/home" element={<Home />} />
       </Routes>
     </Router>
   );
