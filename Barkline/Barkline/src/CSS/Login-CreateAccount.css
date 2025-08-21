@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.custom-btn {
+  background-color: #35408e !important;
+  color: #fff !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: violet;
+}
+
+.custom-btn:active {
+  background-color: #22227a;
+}
+
+.custom-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(53, 64, 142, 0.7);
+}
+
+/* Desktop*/
+.login-bg {
+  background-image: url("https://national-u.edu.ph/wp-content/uploads/2021/04/banner-nu-dasma.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Mobile*/
+@media (max-width: 768px) {
+  .login-page {
+    background: url("https://national-u.edu.ph/wp-content/uploads/2021/04/banner-nu-dasma.jpg")
+      no-repeat center center;
+    background-size: cover;
+  }
+
+  .login-bg {
+    display: none;
+  }
+}
